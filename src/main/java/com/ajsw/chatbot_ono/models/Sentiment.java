@@ -16,6 +16,7 @@ public class Sentiment {
     @ManyToOne
     private User usuario;
     private String sentimiento;
+    private String color;
     private LocalDateTime fecha;
 
 
