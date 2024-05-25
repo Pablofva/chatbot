@@ -48,7 +48,9 @@
         </dependency>
     </dependencies>
 
-    <build>
+    <build>IUser
+        models
+        User
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
