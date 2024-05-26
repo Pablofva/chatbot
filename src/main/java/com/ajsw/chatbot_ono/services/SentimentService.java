@@ -20,10 +20,10 @@ public class SentimentService {
 
     public Sentiment analizarSentimiento(Long usuarioId, String texto) {
         User usuario = usuarioService.getUserById(usuarioId);
-        String sentimiento = nlpClient.analizarSentimientos(texto);
+       // String sentimiento = nlpClient.analizarSentimientos(texto);
         Sentiment sentimientoEntity = new Sentiment();
         sentimientoEntity.setUsuario(usuario);
-        sentimientoEntity.setSentimiento(sentimiento);
+       // sentimientoEntity.setSentimiento(sentimiento);
         sentimientoEntity.setFecha(LocalDateTime.now());
         return sentimientoRepository.save(sentimientoEntity);
     }

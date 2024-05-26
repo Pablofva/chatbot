@@ -1,18 +1,21 @@
 package com.ajsw.chatbot_ono.services;
 
-
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 public class NLPClient {
-    private final String API_URL = "https://api.nlpcloud.io/v1/spa_Latn/distilbert-base-uncased-finetuned-sst-2-english/sentiment";
 
-    private final String API_KEY = "44bfd9b489d27cd9f9b7dcf8c1c4bd7433d3aaf5";
+    @Value("${nlpcloud.api.key}")
+    private String apiKey;
 
-    public String analizarSentimientos(String text) {
+    private final String apiUrl = "https://api.nlpcloud.io/v1/your_model/analyze";
 
-
+    public String analyzeText(String text) {
+        RestTemplate restTemplate = new RestTemplate();
+        // Configurar la solicitud HTTP
+        return "Sentimiento detectado";
     }
+
 }

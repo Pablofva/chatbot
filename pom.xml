@@ -14,7 +14,7 @@
     <name>chatbot_ono</name>
     <description>chatbot_ono</description>
     <properties>
-        <java.version>22</java.version>
+        <java.version>17</java.version> <!-- Cambiado a 17 ya que Java 22 no es compatible -->
     </properties>
     <dependencies>
         <dependency>
@@ -25,15 +25,9 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -48,9 +42,7 @@
         </dependency>
     </dependencies>
 
-    <build>IUser
-        models
-        User
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -66,5 +58,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

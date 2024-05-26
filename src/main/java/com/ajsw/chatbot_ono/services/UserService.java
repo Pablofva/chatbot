@@ -4,7 +4,11 @@ package com.ajsw.chatbot_ono.services;
 import com.ajsw.chatbot_ono.models.User;
 import com.ajsw.chatbot_ono.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public class UserService implements IUserService{
     //repository
     @Autowired
@@ -18,5 +22,8 @@ public class UserService implements IUserService{
     @Override
     public User getUserById(long id) {
         return userRepository.findById(id).get();
+    }
+    public List<User> getAllUsers() {
+        return (List<User>) userRepository.findAll();
     }
 }
