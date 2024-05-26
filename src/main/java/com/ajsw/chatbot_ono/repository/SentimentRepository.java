@@ -1,7 +1,17 @@
 package com.ajsw.chatbot_ono.repository;
 
-import com.ajsw.tp.models.Sentiment;
+import com.ajsw.chatbot_ono.models.Sentiment;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.query.FluentQuery;
 
-public class SentimentRepository extends JpaRepository<Sentiment, Long> {}{
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
+
+public interface SentimentRepository extends JpaRepository<Sentiment, Long> {
+
 }

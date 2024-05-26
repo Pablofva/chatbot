@@ -1,7 +1,8 @@
 package com.ajsw.chatbot_ono.controllers;
 
-import com.ajsw.tp.models.User;
-import com.ajsw.tp.services.UserService;
+
+import com.ajsw.chatbot_ono.models.User;
+import com.ajsw.chatbot_ono.services.UserService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

@@ -1,6 +1,7 @@
 package com.ajsw.chatbot_ono.services;
 
-import com.ajsw.tp.models.User;
+
+import com.ajsw.chatbot_ono.models.User;
 
 public interface IUserService {
     public User addUser(User user);

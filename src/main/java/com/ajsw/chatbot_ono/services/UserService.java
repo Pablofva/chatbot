@@ -1,7 +1,8 @@
 package com.ajsw.chatbot_ono.services;
 
-import com.ajsw.tp.models.User;
-import com.ajsw.tp.repository.UserRepository;
+
+import com.ajsw.chatbot_ono.models.User;
+import com.ajsw.chatbot_ono.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class UserService implements IUserService{

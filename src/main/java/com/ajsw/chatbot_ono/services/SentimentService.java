@@ -1,8 +1,9 @@
 package com.ajsw.chatbot_ono.services;
 
-import com.ajsw.tp.models.Sentiment;
-import com.ajsw.tp.models.User;
-import com.ajsw.tp.repository.SentimentRepository;
+
+import com.ajsw.chatbot_ono.models.Sentiment;
+import com.ajsw.chatbot_ono.models.User;
+import com.ajsw.chatbot_ono.repository.SentimentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
